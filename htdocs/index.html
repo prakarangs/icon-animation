@@ -38,20 +38,6 @@
           </div>
         </div>
       </div>
-      
-      <!-- Grid -->
-      <!-- <div class="row sample-wrapper">
-        <div class="col-half col-txt">
-          <div class="inner">
-            <h3></h3>
-          </div>
-        </div>
-        <div class="col-half">
-          <div class="inner align-center">
-            <span class="fa fa-heart"></span>
-          </div>
-        </div>
-      </div> -->
 
       <!-- <div class="row sample-wrapper">
         <div class="col-half col-txt">
@@ -78,12 +64,50 @@
       icon.style.transform = <br>
       <b>'scale3d(' + bounceProgress + ',' + bounceProgress + ',1)';</b></p>
             </div>
+
+            <p>We can also pass in diffrent parameters into CSS3 animation functions.</p>
+            <p>scale3d(x,y,z);</p>
           </div>
         </div>
         <div class="col-half">
           <div class="inner align-center">
             <div class="icon-wrapper">
               <span class="fa fa-heart ani2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row sample-wrapper">
+        <div class="col-half col-txt">
+          <div class="inner">
+            <h3>3. Using Burst method</h3>
+            <div class="code-block">
+              <p><b>new</b> mojs.Burst({
+                <p class="indent">
+                  parent: wrapper3,<br>
+                  repeat: 999,<br>
+                  duration: 1500,<br>
+                  shape : 'circle',<br>
+                  fill : [ '#FE4C4A', '#FE4C4A', '#FE4C4A', '#FE4C4A', '#FE4C4A', '#FE4C4A' ],<br>
+                  x: '26%',<br>
+                  y: '50%',<br>
+                  opacity: 0.6,<br>
+                  <span class="comment">//childOptions: { radius: {20:0} },<br>
+                  //radius: {40:120},<br></span>
+                  count: 6,<br>
+                  isSwirl: true,<br>
+                  isRunLess: true,<br>
+                  easing: mojs.easing.bezier(0.1, 1, 0.3, 1)<br>
+                </p>
+            })</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="inner align-center">
+            <div class="icon-wrapper wrapper3">
+                <span class="fa fa-heart ani3"></span>
             </div>
           </div>
         </div>

@@ -43,18 +43,30 @@ p {
 	border: 2px solid #A33371;
 	padding: 15px;
 }
-.code-block > p {
+.code-block p {
 	color: #4E59A3;
 	font-family: Arial;
 	font-size: 14px;
 }
 .icon-wrapper {
+	position: relative;
 	margin-top: 100px;
 }
+
+/*.wrapper-absolute { position: absolute; }*/
 /* Typo  */
 .hot {
 	color: #BF3353;
 	font-size: 20px;
+}
+.code-block .indent {
+	color: #39A03C;
+	padding-left: 20px;
+}
+.code-block .comment {
+	color: #6B6A68;
+	font-size: 12px;
+	line-height: 14px;
 }
 /* Helper*/
 .align-center { text-align: center; }
