@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mo.js Animation icon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <h1>Animation with Mo.js</h1>
+      </div>
+      <div class="row sample-wrapper">
+        <!-- Instruction block -->
+        <div class="col-half col-txt">
+          <div class="inner">
+            <h3>1. TranslateY with Mo.js</h3>
+            <div class="code-block">
+              <p>var bounceProgress = mojs.easing.bounce.out(progress);</p>
+              <p>iconHeart.style.transform = <br><b>'translateY(' + 200*bounceProgress + 'px)'</b>;</p>
+            </div>
+            <p>Mo.js use <b>Tween</b> method to animate style of the element. While using (element).style.transform = 'value'; we can animate like CSS3.</p>
+            
+            <p><strong class="hot">Progress</strong> is increasing number from 0 to 1.</p>
+            <p><strong class="hot">200*Progress</strong><br>This basically means, we will translate the position of our element bit by bit until we reach 200px. (without easing)</p>
+          </div>
+        </div>
+        <!-- Animation block -->
+        <div class="col-half">
+          <div class="inner align-center">
+              <span class="fa fa-heart"></span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Grid -->
+      <!-- <div class="row sample-wrapper">
+        <div class="col-half col-txt">
+          <div class="inner">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="inner align-center">
+            <span class="fa fa-heart"></span>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="row sample-wrapper">
+        <div class="col-half col-txt">
+          <div class="inner">
+            <h3>2.</h3>
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="inner align-center">
+            <div class="icon-wrapper">
+              <span class="fa fa-heart ani2"></span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      <div class="row sample-wrapper">
+        <div class="col-half col-txt">
+          <div class="inner">
+            <h3>2. scale3d transformation</h3>
+            <div class="code-block">
+              <p>var bounceProgress = mojs.easing.bounce.out(progress);<br>
+      icon.style.transform = <br>
+      <b>'scale3d(' + bounceProgress + ',' + bounceProgress + ',1)';</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-half">
+          <div class="inner align-center">
+            <div class="icon-wrapper">
+              <span class="fa fa-heart ani2"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="http://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
